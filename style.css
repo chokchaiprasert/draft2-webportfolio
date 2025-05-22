@@ -1,0 +1,108 @@
+
+    .typewriter {
+      display: inline-block;
+      overflow: hidden;
+      border-right: 2px solid orange;
+      white-space: nowrap;
+      font-size: 35px;
+      width: 0;
+      animation:
+        typing 5s steps(24, end) infinite,
+        blinkCursor 1s step-end infinite;
+    }
+    
+    @keyframes typing {
+      0%   { width: 0 }
+      60%  { width: 100% }
+      80%  { width: 100% }
+      100% { width: 0% }
+    }
+
+    @keyframes blinkCursor {
+      0%, 100% { border-right-color: transparent; }
+      0% { border-right-color: orange; }
+    }
+
+    @media (max-width: 768px) {
+      .typewriter {
+        font-size: 7vw;
+      }
+      
+    }
+    .info-container {
+      min-height: 70vh;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ECEFCA;
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-title {
+      padding: 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+      img{
+        height: 300px;
+      width: 400px;
+      }
+        
+      .info-container {
+      min-height: 70vh;
+    }
+    h2{
+     font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+    a {    text-decoration: none;
+            color: #547792; 
+            font-size: 18px;
+          }
+          body {
+      font-family: Arial, sans-serif;
+      background-color: #ECEFCA;
+      margin: 0;
+    }
+      h1{
+      color: #547792;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+     section{
+      -webkit-flex: 7;
+      -ms-flex: 7;
+      flex: 3;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      section{
+        -webkit-flex-direction: column;
+    flex-direction: column;
+      }
+    }
+      
+    
